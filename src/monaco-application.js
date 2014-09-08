@@ -45,7 +45,7 @@
             // Add all unregistered routes before starting the history
             this.router._addRoutes();
 
-            Monaco.history.start({pushState: options.pushState});
+            Monaco.history.start(options);
 
             // trigger a custom event after the application has started
             this.trigger('started', this);
